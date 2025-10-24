@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; padding: 10px; width: 250px; }
+h2 { color: #2c3e50; text-align: center; }
+button { padding: 8px 12px; margin-top: 10px; width: 100%; cursor: pointer; }
+#results p { margin: 5px 0; }
