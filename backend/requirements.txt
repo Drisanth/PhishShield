@@ -4,3 +4,8 @@ transformers
 pandas
 scikit-learn
 shap
+requests
+joblib
+numpy
+matplotlib
+chart.js

@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+backend/utils/__pycache__/
+*.py[cod]
+
+# Optional common Python ignores
+*.pyc
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+.mypy_cache/

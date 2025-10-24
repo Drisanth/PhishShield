@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PhishShield</title>
-  <link rel="stylesheet" href="popup.css" />
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <h2>PhishShield</h2>
-  <div id="status">Ready to scan emails</div>
+  <div class="container">
+    <h2>PhishShield</h2>
+    <button id="scanBtn">Scan Email</button>
+    <p id="status"></p>
 
-  <div id="results" style="display:none;">
-    <p><strong>Header Risk:</strong> <span id="header-score"></span></p>
-    <p><strong>Content Risk:</strong> <span id="body-score"></span></p>
-    <p><strong>Link Risk:</strong> <span id="link-score"></span></p>
-    <h3>Final Verdict: <span id="verdict"></span></h3>
+    <div id="results" class="results">
+      <h3>Analysis Results</h3>
+      <p><b>Header Score:</b> <span id="header-score"></span></p>
+      <p><b>Domain Trust Score:</b> <span id="domain-score"></span></p>
+      <p><b>Body Score:</b> <span id="body-score"></span></p>
+      <p><b>BERT Score:</b> <span id="bert-score"></span></p>
+      <p><b>Feedback Score:</b> <span id="feedback-score"></span></p>
+      <p><b>Link Score:</b> <span id="link-score"></span></p>
+      <p><b>Verdict:</b> <span id="verdict"></span></p>
+
+      <div id="feedback" class="feedback">
+        <p>Was this correct?</p>
+        <button id="feedback-yes" class="feedback-btn">✅ Yes</button>
+        <button id="feedback-no" class="feedback-btn">❌ No</button>
+      </div>
+    </div>
   </div>
 
-  <button id="scanBtn">Scan Email</button>
   <script src="popup.js"></script>
 </body>
 </html>

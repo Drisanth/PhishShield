@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 250px;
+}
+button {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#result p {
+    margin: 5px 0;
+}
